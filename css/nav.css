@@ -1,0 +1,131 @@
+nav {
+  padding: 3rem 0;
+  position: fixed;
+  left: 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo p {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.logo {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.navigation ul {
+  display: flex;
+  gap: 4rem;
+}
+
+.navigation ul li a {
+  color: black;
+  font-size: 2rem;
+  position: relative;
+}
+
+.navigation ul li a::after{
+    content: "";
+    height: 3px;
+    width: 0%;
+    background: #000;
+    display: block;
+    position: absolute;
+    bottom: -30%;
+}
+
+.navigation ul li a:hover::after{
+    width: 100%;
+    transition: all 0.5s;
+
+}
+
+.search-btn button {
+  background: #000;
+  padding: 2.5rem 2.5rem;
+  position: absolute;
+  top: 0;
+  right: -1%;
+  font-size: 5rem;
+}
+
+.search-btn button img {
+  width: 40px;
+}
+
+/* responsive navigaation */
+
+.res-navigation {
+  width: 85%;
+  height: 100vh;
+  background: black;
+  position: absolute;
+  right: -15%;
+  top: 0;
+  z-index: -55;
+  border-radius: 15px;
+}
+
+.res-navigation ul {
+  position: absolute;
+  top: 15%;
+  right: 15%;
+  transition: all o.5s;
+  transition-delay: 1s;
+}
+
+.res-navigation ul li a {
+  color: rgb(222, 185, 185);
+  font-size: 3rem;
+  display: inline-block;
+  padding: 20px 0;
+  z-index: 999;
+ 
+}
+
+.res-navigation ul li a::after{
+    content: "";
+    height: 3px;
+    width: 0%;
+    background: #6aff00;
+    display: inline-block;
+    
+}
+
+.res-navigation ul li a:hover::after{
+    width: 100%;
+    transition: all 0.5s;
+
+}
+
+.res-navigation ul li span {
+  fill: white;
+  margin-bottom: 40px;
+  display: inline-block;
+}
+
+.menu-btn img{
+   height: 40px; 
+   display: none;
+}
+
+.hide{
+    margin-right: -10000px;
+    transition:all 1s;
+}
+
+@media (max-width: 391px) {
+  .navigation {
+    display: none;
+  }
+
+  .menu-btn img{
+    display: block;
+  }
+}
