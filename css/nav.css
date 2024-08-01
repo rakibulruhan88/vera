@@ -30,20 +30,19 @@ nav {
   position: relative;
 }
 
-.navigation ul li a::after{
-    content: "";
-    height: 3px;
-    width: 0%;
-    background: #000;
-    display: block;
-    position: absolute;
-    bottom: -30%;
+.navigation ul li a::after {
+  content: "";
+  height: 3px;
+  width: 0%;
+  background: #000;
+  display: block;
+  position: absolute;
+  bottom: -30%;
 }
 
-.navigation ul li a:hover::after{
-    width: 100%;
-    transition: all 0.5s;
-
+.navigation ul li a:hover::after {
+  width: 100%;
+  transition: all 0.5s;
 }
 
 .search-btn button {
@@ -66,16 +65,15 @@ nav {
   height: 100vh;
   background: black;
   position: absolute;
-  right: -15%;
+  right: -200%;
   top: 0;
-  z-index: -55;
-  border-radius: 15px;
+  z-index: 999999;
 }
 
 .res-navigation ul {
   position: absolute;
   top: 15%;
-  right: 15%;
+  right: -100%;
   transition: all o.5s;
   transition-delay: 1s;
 }
@@ -86,22 +84,19 @@ nav {
   display: inline-block;
   padding: 20px 0;
   z-index: 999;
- 
 }
 
-.res-navigation ul li a::after{
-    content: "";
-    height: 3px;
-    width: 0%;
-    background: #6aff00;
-    display: inline-block;
-    
+.res-navigation ul li a::after {
+  content: "";
+  height: 3px;
+  width: 0%;
+  background: #6aff00;
+  display: inline-block;
 }
 
-.res-navigation ul li a:hover::after{
-    width: 100%;
-    transition: all 0.5s;
-
+.res-navigation ul li a:hover::after {
+  width: 100%;
+  transition: all 0.5s;
 }
 
 .res-navigation ul li span {
@@ -110,14 +105,46 @@ nav {
   display: inline-block;
 }
 
-.menu-btn img{
-   height: 40px; 
-   display: none;
+.menu-btn img {
+  height: 40px;
+  display: none;
 }
 
-.hide{
-    margin-right: -10000px;
-    transition:all 1s;
+.hide {
+  right: -100%;
+  transition: all 1s;
+}
+
+@media (max-width: 1024px) {
+  .search-btn button {
+    padding: 1.5rem 1.5rem;
+  }
+}
+
+@media (max-width: 950px) {
+  .navigation {
+    display: none;
+  }
+  .menu-btn img {
+    display: block;
+  }
+
+  .res-navigation ul {
+    position: absolute;
+    top: 15%;
+    right: 35%;
+    transition: all o.5s;
+    transition-delay: 1s;
+  }
+  .res-navigation ul li a {
+    font-size: 5.8rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .res-navigation ul li a {
+    font-size: 3.5rem;
+  }
 }
 
 @media (max-width: 391px) {
@@ -125,7 +152,10 @@ nav {
     display: none;
   }
 
-  .menu-btn img{
+  .menu-btn img {
     display: block;
+  }
+  .res-navigation ul li a {
+    font-size: 3.5rem;
   }
 }

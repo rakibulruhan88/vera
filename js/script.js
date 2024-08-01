@@ -3,11 +3,11 @@ let closeBtn = document.querySelector(".res-navigation ul li span");
 let resNav = document.querySelector(".hide");
 function responsiveNavigation() {
   menuBtn.addEventListener("click", () => {
-    resNav.style.margin = "0";
+    resNav.style.right = "-13%";
   });
 
   closeBtn.addEventListener("click", () => {
-    resNav.style.margin = "-1000px";
+    resNav.style.right = "-100%";
   });
 }
 
