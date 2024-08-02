@@ -1,0 +1,160 @@
+@media (max-width: 1024px) {
+  .hero-main-text h1 {
+    font-size: 55px;
+  }
+  .section2 {
+    padding: 120px 0;
+  }
+  .s5-img {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 50px;
+  }
+
+  .s5-img img {
+    width: 600px;
+  }
+
+  .s3-content h2 {
+    font-size: 35px;
+  }
+
+  .s3-content p {
+    font-size: 14px;
+  }
+
+  .s3-content ul li {
+    font-size: 14px;
+  }
+
+  .inner-div-color .font-2::after {
+    width: 50%;
+    right: -65%;
+  }
+
+  .signature p {
+    padding: 0 48px;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    max-width: 500px;
+    margin-top: 50px;
+    line-height: 30px;
+  }
+  .hero-main-text h1 span {
+    font-size: 60px;
+  }
+
+  .substract {
+    display: none;
+  }
+}
+@media (max-width: 820px) {
+  .hero-main-text h1 {
+    font-size: 40px;
+  }
+  .hero-second .content p {
+    font-size: 14px;
+  }
+  .circel-btn button {
+    display: none;
+  }
+  .section3 {
+    height: 40vh;
+  }
+  .s3-content h2 {
+    font-size: 29px;
+  }
+
+  .s3-content p {
+    font-size: 12px;
+    margin-bottom: 10px;
+    line-height: 20px;
+  }
+
+  .s3-content ul li {
+    font-size: 12px;
+    margin-bottom: 10px;
+    line-height: 20px;
+  }
+
+  .inner-div-color .font-2::after {
+    width: 0%;
+  }
+
+  .font-1 {
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+  }
+
+  .section4 {
+    height: 50vh;
+  }
+
+  .section2 {
+    padding: 50px 0;
+  }
+}
+
+@media (max-width: 412px) {
+  .hero-main-text h1 {
+    font-size: 35px;
+    text-align: center;
+  }
+
+  .hero-main-text h1 span {
+    font-size: 35px;
+  }
+
+  .hero-second .content p {
+    font-size: 14px;
+    text-align: center;
+  }
+  .icons {
+    justify-content: center;
+  }
+
+  .section3{
+    flex-direction: column;
+    height: 100vh;
+    align-items: flex-start;
+    justify-content: space-evenly;
+
+  }
+
+  .s3-content {
+    width: 100%;
+  }
+
+  .s3-content h2{
+    font-size: 35px;
+  }
+
+.font-1{
+    font-size: 30px;
+    text-align: center;
+}
+
+.transparent{
+    font-size: 60px;
+}
+.font-2{
+    font-size: 30px;
+}
+
+.inner-div-color{
+    height: 90px;
+    width: 200px;
+}
+
+
+.section4{
+    height: 75vh;
+}
+
+.signature{
+    width: 100%;
+}
+
+.signature img{
+    width: 130px;
+}
+}

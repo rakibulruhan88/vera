@@ -38,11 +38,14 @@ nav {
   display: block;
   position: absolute;
   bottom: -30%;
+  transition: all 0.5s;
+  right: 50%;
+  transform: translateX(50%);
+
 }
 
 .navigation ul li a:hover::after {
   width: 100%;
-  transition: all 0.5s;
 }
 
 .search-btn button {
@@ -113,6 +116,10 @@ nav {
 .hide {
   right: -100%;
   transition: all 1s;
+}
+
+.section3 {
+  height: 100vh;
 }
 
 @media (max-width: 1024px) {
