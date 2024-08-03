@@ -118,9 +118,6 @@ nav {
   transition: all 1s;
 }
 
-.section3 {
-  height: 100vh;
-}
 
 @media (max-width: 1024px) {
   .search-btn button {
