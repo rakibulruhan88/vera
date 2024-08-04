@@ -1,11 +1,12 @@
 .section1 {
-  padding-top: 14rem;
-  height: 100vh;
+  padding-top: 4rem;
 }
 
+
+
 .hero-main-text h1 {
-  font-size: 120px;
-  width: 70%;
+  font-size: 70px;
+  max-width: 70%;
   margin: auto;
   margin-bottom: 5vh;
   
@@ -14,22 +15,26 @@
 .hero-main-text h1 span {
   background: black;
   color: white;
-  font-size: 120px;
+  font-size: 70px;
 }
 
 .hero-second .content p {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 30px;
-  max-width: 65%;
-  margin: auto;
 }
 
-.hero-second {
+.hero-second{
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero-second .content{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 60%;
+  max-width: 50%;
   margin: auto;
+  flex-direction: column;
 }
 
 .circel-btn button {
@@ -46,9 +51,9 @@
   gap: 20px;
   margin-top: 10px;
   height: 40px;
-  max-width: 65%;
   margin: auto;
   margin-top: 15px;
+  justify-content: flex-start;
 }
 
 .section2 {

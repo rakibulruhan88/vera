@@ -1,10 +1,7 @@
-nav {
-  padding: 3rem 0;
-  position: fixed;
-  left: 10%;
+
+.nav-menu {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 .logo p {
@@ -19,6 +16,10 @@ nav {
   align-items: center;
 }
 
+.navigation {
+  display: flex;
+  align-items: center;
+}
 .navigation ul {
   display: flex;
   gap: 4rem;
@@ -41,7 +42,6 @@ nav {
   transition: all 0.5s;
   right: 50%;
   transform: translateX(50%);
-
 }
 
 .navigation ul li a:hover::after {
@@ -51,9 +51,6 @@ nav {
 .search-btn button {
   background: #000;
   padding: 2.5rem 2.5rem;
-  position: absolute;
-  top: 0;
-  right: -1%;
   font-size: 5rem;
 }
 
@@ -119,6 +116,10 @@ nav {
 }
 
 
+
+
+
+/* 
 @media (max-width: 1024px) {
   .search-btn button {
     padding: 1.5rem 1.5rem;
@@ -127,10 +128,10 @@ nav {
 
 @media (max-width: 950px) {
   .navigation {
-    display: none;
+    display: block;
   }
   .menu-btn img {
-    display: block;
+    display: none;
   }
 
   .res-navigation ul {
@@ -145,9 +146,16 @@ nav {
   }
 }
 
-@media (max-width: 500px) {
+@media (min-width: 500px) {
   .res-navigation ul li a {
     font-size: 3.5rem;
+  }
+  .navigation ul{
+    display:none;
+  }
+
+  .menu-btn img{
+    display: block;
   }
 }
 
@@ -162,4 +170,4 @@ nav {
   .res-navigation ul li a {
     font-size: 3.5rem;
   }
-}
+} */

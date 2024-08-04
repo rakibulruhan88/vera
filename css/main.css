@@ -8,11 +8,12 @@
 }
 
 body {
+ overflow-x: hidden;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .container {
-  width: 80%;
+  max-width: 1200px;
   margin: auto;
 }
 
