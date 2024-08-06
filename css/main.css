@@ -8,13 +8,14 @@
 }
 
 body {
- overflow-x: hidden;
+  position: relative;
+  overflow-x: hidden;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .container {
   max-width: 1200px;
-  margin: auto;
+  margin:0 auto;
 }
 
 a {
