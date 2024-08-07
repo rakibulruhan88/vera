@@ -15,6 +15,9 @@
   .container {
     max-width: 940px;
   }
+  .nav-menu{
+    padding: 20px 0;
+  }
   .navigation ul {
     display: none;
   }
@@ -22,7 +25,7 @@
   .menu-btn img {
     display: block;
   }
- 
+
   .hero-main-text h1 {
     font-size: 55px;
   }
@@ -76,7 +79,7 @@
   }
 
   .s5-img-1 img:nth-child(2) {
-    padding:4vw;
+    padding: 4vw;
   }
 
   /* .substract {
@@ -88,6 +91,29 @@
 @media (max-width: 950px) {
   .container {
     max-width: 850px;
+  }
+
+  .search-btn button{
+    display: none;
+  }
+
+  .section6 {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .experieces {
+    max-width: 75%;
+  }
+  .circel-1 {
+    gap: 15vw;
+  }
+  .circel-2 {
+    gap: 15vw;
+  }
+  .circel-3 {
+    gap: 15vw;
   }
 }
 
@@ -135,10 +161,7 @@
     padding: 50px 0;
   }
 
-  /* .substract {
-    top: 45%;
-    left: 46.3%;
-  } */
+ 
 }
 
 @media (max-width: 768px) {
@@ -157,10 +180,9 @@
     text-align: center;
     max-width: 80%;
   }
-  .hero-main-text h1 span{
-font-size: 45px;
+  .hero-main-text h1 span {
+    font-size: 45px;
   }
-
 
   .hero-second .content {
     max-width: 80%;
@@ -193,6 +215,13 @@ font-size: 45px;
     font-size: 30px;
     text-align: center;
   }
+
+  .experieces .experience-1 p:nth-child(1)::before{
+    left: -20%;
+  }
+  .substract {
+    max-width: 50px;
+  }
 }
 
 @media (max-width: 430px) {
@@ -217,7 +246,6 @@ font-size: 45px;
     max-width: 100%;
   }
 
- 
   .icons {
     justify-content: center;
   }
@@ -240,13 +268,27 @@ font-size: 45px;
   .section3 {
     flex-direction: column;
   }
-  /* .substract img {
-    width: 58px;
-    top: 38%;
-    left: 12%;
-} */
-}
+  .experieces .experience-1 p:nth-child(4) {
+    font-size: 14px;
+  }
+  .experieces .experience-1 h3 {
+    font-size: 20px;
+  }
+  /* .experieces .experience-1 p:nth-child(1)::before{
+    left: -25%;
+  } */
 
+  .experieces {
+    max-width: 100%;
+  }
+
+  .experieces {
+    gap: 10vw;
+  }
+
+  
+}
+ 
 @media (max-width: 391px) {
   .substract img {
     width: 40px;
