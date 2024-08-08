@@ -21,6 +21,7 @@ form {
   justify-content: center;
   flex-direction: column;
   gap: 20px;
+  padding-bottom: 30px;
 }
 form input {
   display: block;
@@ -32,6 +33,7 @@ form input {
   border: none;
   color: white;
   border-bottom: 2px solid gray;
+  position: relative;
 }
 form textarea {
   display: block;
@@ -46,11 +48,13 @@ form textarea {
 }
 
 form input::after{
-    content: "this";
+    content: "";
     height: 4px;
     width: 100%;
     background: white;
-    display: inline;
+    position: absolute;
+    top: 0%;
+    left: 0;
 }
 
 form input:focus{
@@ -59,4 +63,32 @@ form input:focus{
     outline: 2px solid rgb(189, 178, 178);
     padding: 15px;
     border-radius: 7px;
+}
+
+
+.footer-end{
+    margin-top: 40px;
+}
+
+.footer-end h2{
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+} 
+
+.footer-end .icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.footer-end .icons img{
+    height: 20px;
+}
+
+.footer-end p{
+    color: white;
+    text-align: center;
+    font-size: 16px;
 }

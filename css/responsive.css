@@ -385,6 +385,10 @@
   .blog p {
     display: none;
   }
+
+  .footer-end h2{
+      font-size: 20px;
+}
 }
 
 @media (max-width: 391px) {
